@@ -1,0 +1,58 @@
+{
+  "name": "expressjs-accessquiz-api",
+  "version": "1.0.0",
+  "description": "Express js api handler for accessquiz project",
+  "main": "bin/www.js",
+  "private": true,
+  "scripts": {
+    "start": "node bin/www.js",
+    "dev": "nodemon --exec babel-node bin/www.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:migrate": "npx sequelize-cli db:migrate",
+    "db:migrate:undo": "npx sequelize-cli db:migrate:undo",
+    "db:migrate:undo:all": "npx sequelize-cli db:migrate:undo:all",
+    "db:seed:all": "npx sequelize-cli db:seed:all",
+    "db:seed:undo:all": "npx sequelize-cli db:seed:undo:all"
+  },
+  "author": "Benjamin4k",
+  "keywords": [
+    "api",
+    "accessquiz",
+    "express"
+  ],
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sleepy4k/expressjs-accessquiz-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Sleepy4k/expressjs-accessquiz-api/issues"
+  },
+  "homepage": "https://github.com/Sleepy4k/expressjs-accessquiz-api#readme",
+  "type": "module",
+  "dependencies": {
+    "@babel/core": "^7.21.3",
+    "@babel/node": "^7.20.7",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/register": "^7.21.0",
+    "bcrypt": "^5.1.0",
+    "cookie-session": "^2.0.0",
+    "cors": "^2.8.5",
+    "debug": "^4.3.4",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "http-errors": "^2.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.2.0",
+    "sequelize": "^6.29.3"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "nodemon": "^2.0.21",
+    "sequelize-cli": "^6.6.0"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  }
+}
